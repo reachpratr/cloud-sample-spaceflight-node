@@ -1,0 +1,5 @@
+---
+applications:
+  - memory: 256M
+    buildpack: https://github.com/cloudfoundry/buildpack-nodejs#v1.6.4
+    stack: cflinuxfs2
