@@ -10,7 +10,6 @@ stage('build') {
        mtaBuild script:this
 }
 stage('deploy') {
-    sh 'rm -rf node_modules'
-    cloudFoundryDeploy script:this
+        cloudFoundryDeploy script:this
 }
 }
