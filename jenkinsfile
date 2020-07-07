@@ -7,7 +7,7 @@ node() {
 
 
 stage('build') {
-       mtaBuild script:this
+       sh 'mtaBuild --build-target CF --mtar cloud-sample-spaceflight-node.mtar build'
 }
 stage('deploy') {
         cloudFoundryDeploy script:this
